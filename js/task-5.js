@@ -1,12 +1,12 @@
 'use strict'
 
 class Car {
-    constructor({ speed = 0, price, maxSpeed, isOn = false, distance = 0 }) {
-        this._price = price;
-        this.speed = speed;
-        this.isOn = isOn;
+    constructor({ maxSpeed, price }) {
         this.maxSpeed = maxSpeed;
-        this.distance = distance;
+        this.speed = 0;
+        this.isOn = false;
+        this.distance = 0;
+        this._price = price;
     }
 
     /*
